@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid #ddd;
+    padding: 40px 20px;
+}
+
+.new-task-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.new-task-input {
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.new-task-input:focus {
+    border: 2px solid cornflowerblue;
+}
+
+.new-task-button {
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.new-task-button:hover {
+    background-color: cornflowerblue;
+}
+
+.tasks-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.task-item p {
+    color: dodgerblue;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.task-item i {
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.taskItem i:hover {
+    background-color: cornflowerblue;
+}
+
+.error {
+    border: 2px solid red !important;
+}
+.error::placeholder {
+    color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+}
